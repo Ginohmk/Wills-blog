@@ -47,9 +47,26 @@ const Container = styled.div`
     li {
       list-style: none;
       cursor: pointer;
+      p {
+        font-size: 1rem;
+      }
 
       &:hover {
         color: #ffa301;
+      }
+    }
+  }
+
+  @media screen and (max-width: 473px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      li {
+        p {
+          font-size: 0.8rem;
+        }
       }
     }
   }

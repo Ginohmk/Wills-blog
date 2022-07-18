@@ -25,7 +25,9 @@ function HeaderNav() {
 export default HeaderNav;
 
 const Container = styled.div`
-  padding: 1rem 5rem;
+  padding: 1rem 0;
+  width: 95%;
+  margin: 0 auto;
   align-items: center;
   .nav-left {
     h5 {

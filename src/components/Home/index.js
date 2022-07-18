@@ -76,8 +76,8 @@ export default Home;
 
 const Container = styled.div`
   padding-top: 4rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  width: 95%;
+  margin: 0 auto;
   gap: 6.5rem;
 
   .trend-finance,
@@ -88,9 +88,22 @@ const Container = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 3rem;
   }
 
   .music-side-post {
     gap: 3rem;
+  }
+
+  @media screen and (max-width: 994px) {
+    width: 90%;
+    margin: 0 auto;
+    .trend-finance,
+    .life-post-genre,
+    .tech-post-genre,
+    .latest-aticles {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
   }
 `;

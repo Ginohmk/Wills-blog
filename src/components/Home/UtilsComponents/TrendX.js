@@ -107,4 +107,52 @@ const Container = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 473px) {
+    .heading {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      svg {
+        font-size: 2.5rem;
+        margin-right: 30px;
+      }
+    }
+
+    .posts {
+      .post-card{
+        .post-details {
+          h3 {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+
+          .post-genre-date  {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .posts{
+      grid-template-columns: 1fr ;
+      .post-card{
+
+         .img-container {
+  
+          img{
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
 `;

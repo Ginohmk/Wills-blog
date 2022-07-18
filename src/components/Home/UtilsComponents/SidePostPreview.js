@@ -20,7 +20,7 @@ function SidePostPreview({ trendArr, title, icon }) {
     </div>
   ));
   return (
-    <Container>
+    <Container className="flex column">
       <div className="finance flex opacity">
         {icon}
 
@@ -34,6 +34,7 @@ function SidePostPreview({ trendArr, title, icon }) {
 
 export default SidePostPreview;
 const Container = styled.div`
+  gap: 1.5rem;
   .finance {
     align-items: center;
     gap: 30px;
@@ -52,7 +53,7 @@ const Container = styled.div`
     .finance-post-left {
       width: 100%;
       h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
 
         &:hover {
           color: #ffa301;
@@ -62,10 +63,11 @@ const Container = styled.div`
       p {
         opacity: 0.5;
         margin-top: -5px;
+        font-size: 0.8rem;
       }
     }
     .finance-post-right {
-      width: 40%;
+      width: 80%;
       height: 100px;
 
       img {
@@ -78,6 +80,23 @@ const Container = styled.div`
           transform: scale(1.05);
           transition: transform 0.5s ease-in-out;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 778px) {
+    .finance {
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+    .finance-post {
+      .finance-post-right {
+        width: 40%;
       }
     }
   }

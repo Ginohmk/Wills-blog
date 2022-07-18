@@ -246,4 +246,46 @@ const Container = styled.div`
       }
     }
   }
+  @media screen and (max-width: 393px) {
+    .cloud-info {
+      .cloude-info-text {
+        h3 {
+          font-size: 1.1rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .cloud-container {
+      &-text {
+        h3 {
+          font-size: 1rem;
+        }
+        svg {
+          font-size: 2rem;
+          position: absolute;
+          top: 0;
+          left: 3rem;
+        }
+      }
+    }
+
+    .days-degree {
+      li {
+        div {
+          h3 {
+            font-size: 1rem;
+          }
+          .degree {
+            font-size: 2rem;
+          }
+        }
+        span {
+          font-size: 1rem;
+          margin-left: -15px;
+        }
+      }
+    }
+  }
 `;

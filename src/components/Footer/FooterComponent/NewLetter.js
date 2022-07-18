@@ -13,7 +13,7 @@ function NewLetter() {
 
         <div className="form-main-container">
           <form className="flex column">
-            <input type="text" palceholder="Your email address" />
+            <input type="text" placeholder="Your email address" />
             <button type="submit"> Subscribe </button>
           </form>
           <p className="opacity">
@@ -41,11 +41,11 @@ const Container = styled.div`
           width: 100%;
           height: 40px;
           padding: 1rem;
-          font-size: 1.3rem;
-          color: #fff;
+          font-size: 1rem;
           border: 1px solid #888;
           border-radius: 5px;
           background-color: transparent;
+          color: #fff;
 
           &:-webkit-autofill,
           &:-webkit-autofill:hover,

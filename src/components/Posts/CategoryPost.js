@@ -47,8 +47,8 @@ function CategoryPost() {
 
 export default CategoryPost;
 const Container = styled.div`
-  padding-left: 5rem;
-  padding-right: 5rem;
+  width: 95%;
+  margin: 0 auto;
   gap: 7rem;
 
   .main {

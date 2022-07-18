@@ -148,8 +148,8 @@ export default GeneralPosts;
 
 const Container = styled.div`
   margin-top: -200px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  width: 95%;
+  margin: 0 auto;
   gap: 7rem;
 
   .main-post {

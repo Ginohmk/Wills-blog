@@ -26,7 +26,8 @@ export default TextMassage;
 
 const Container = styled.div`
   position: relative;
-  margin-left: 5rem;
+  width: 95%;
+  margin: 0 auto;
   margin-top: 20rem;
   letter-spacing: 0.2rem;
 
@@ -78,6 +79,51 @@ const Container = styled.div`
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    margin-top: 13rem;
+    h1 {
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 1.7rem;
+      margin-top: -30px;
+    }
+  }
+
+  @media screen and (max-width: 897px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: -20px;
+    }
+  }
+
+  @media screen and (max-width: 777px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: -20px;
+    }
+  }
+
+  @media screen and (max-width: 698px) {
+    margin-top: 13rem;
+  }
+
+  @media screen and (max-width: 473px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-top: -9px;
     }
   }
 `;

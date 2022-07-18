@@ -35,4 +35,10 @@ const Container = styled.div`
       font-size: 0.7rem;
     }
   }
+
+  @media screen and (max-width: 473px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 `;

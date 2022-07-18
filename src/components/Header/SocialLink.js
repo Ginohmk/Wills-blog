@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function SocialLink() {
   return (
-    <Container className="flex">
+    <Container className="flex ">
       <FaFacebookF className="social-icon" />
       <FaInstagram className="social-icon" />
       <FaTwitter className="social-icon" />
@@ -16,6 +16,7 @@ export default SocialLink;
 
 const Container = styled.div`
   gap: 1.6rem;
+
   .social-icon {
     font-size: 1.3rem;
     cursor: pointer;
@@ -24,5 +25,9 @@ const Container = styled.div`
     &:hover {
       opacity: 1;
     }
+  }
+
+  @media screen and (max-width: 778px) {
+    display: none;
   }
 `;
